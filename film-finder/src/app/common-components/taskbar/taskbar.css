@@ -1,0 +1,27 @@
+.taskbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aqua;
+    color: black;
+    padding: 1rem 2rem;
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+
+
+a {
+    color: white;
+    font-weight: bold;
+
+
+&:hover {
+    color: #ffc107;
+}
+}
+}
+}
