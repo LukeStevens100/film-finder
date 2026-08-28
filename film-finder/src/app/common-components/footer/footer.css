@@ -1,0 +1,25 @@
+.app-footer {
+  background-color: #1a1a1a;
+  color: #999;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin-top: auto; /* Helps push it to the bottom of the page */
+  border-top: 1px solid #333;
+  font-size: 0.9rem;
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    
+    p {
+      margin: 0;
+    }
+
+    .tmdb-notice {
+      font-size: 0.8rem;
+      color: #666;
+      font-style: italic;
+    }
+  }
+}
