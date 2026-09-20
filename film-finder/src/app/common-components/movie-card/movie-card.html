@@ -1,0 +1,14 @@
+<div class="card">
+  <!-- Check if the movie has a poster -->
+  @if (movie.poster_path) {
+    <img [src]="imageBaseUrl + movie.poster_path" [alt]="movie.title + ' poster'" class="poster">
+  } @else {
+    <div class="poster-placeholder">No Image</div>
+  }
+  
+  <div class="card-content">
+    <h3 class="title">{{ movie.title }}</h3>
+    <!-- The API returns dates like "2024-10-12". The slice pipe cuts it to just "2024" -->
+    <p class="year">{{ movie.release_date | slice:0:4 }}</p>
+  </div>
+</div>
